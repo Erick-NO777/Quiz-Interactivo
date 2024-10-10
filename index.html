@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="Un Quiz Interactivo emocionante!!">
+    <meta name="autor" content="Erick Nuñez">
+    <title>Quiz Interactivo</title>
+    <link rel="stylesheet" href="Assets/css/styles.css">
+</head>
+<body>
+    <!-- Pantalla de Inicio -->
+    <div id="inicio" class="pantalla">
+        <h1>Bienvenido al Quiz Interactivo</h1>
+        <p>Pon a prueba tus conocimientos respondiendo las siguientes preguntas.</p>
+        <button id="comenzar-btn">Comenzar Quiz</button>
+    </div>
+
+    <!-- Pantalla de Preguntas -->
+    <div id="preguntas" class="pantalla ocultar">
+        <div class="contenedor-pregunta">
+            <h2 id="pregunta-texto">Pregunta aquí</h2>
+            <div id="temporizador">Tiempo restante: <span id="tiempo-restante">30</span> segundos</div>
+            <div id="retroalimentacion" class="retroalimentacion ocultar"></div>
+            <ul id="opciones-lista">
+                <!-- Opciones de respuesta se generarán dinámicamente -->
+            </ul>
+        </div>
+        <button id="siguiente-btn">Siguiente</button>
+    </div>
+
+    <!-- Pantalla de Resultados -->
+    <div id="resultados" class="pantalla ocultar">
+        <h2>¡Has completado el Quiz!</h2>
+        <p>Tu puntaje: <span id="puntaje-final"></span> de <span id="total-preguntas"></span></p>
+        <p id="mensaje-final"></p>
+        <button id="reiniciar-btn">Reiniciar Quiz</button>
+    </div>
+
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>
